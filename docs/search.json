@@ -62,42 +62,42 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "text": "Greetings:\n\nI’m currently a Junior at BYU studying data science.\nI’m interested in studying data science and using it to solve real world problems.\nI am currently pursuing a career as a data scientist or a data analyst.\nI’m experienced in SQL, C++, C, Python, Pandas, Numpy, and Java. I have previously made a chess game with a corresponding server/client servers, and a Datalog program from scratch."
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "About Me",
     "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "text": "Greetings:\n\nI’m currently a Junior at BYU studying data science.\nI’m interested in studying data science and using it to solve real world problems.\nI am currently pursuing a career as a data scientist or a data analyst.\nI’m experienced in SQL, C++, C, Python, Pandas, Numpy, and Java. I have previously made a chess game with a corresponding server/client servers, and a Datalog program from scratch."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\n\n[Your Degree] - [University Name], [Year]\nRelevant Coursework: Statistics, Data Analysis, Programming, etc."
+    "text": "Education\n\nData Science - Brigham Young University, 2027\nRelevant Coursework: Data Structures, Computational Linear Algebra, Computer Systems, Discrete Structure, Statistical Modeling, Advanced Software Construction, Mathematics of Data Science, Algorithm Design & Analysis, Data Science Process, and Technical Communication."
   },
   {
     "objectID": "about.html#skills-interests",
     "href": "about.html#skills-interests",
     "title": "About Me",
     "section": "Skills & Interests",
-    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python\nData Analysis: Pandas, NumPy\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\n[Your specific interests, e.g., environmental data, healthcare analytics, finance, etc.]\n[Other areas you’re curious about]"
+    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python, C++, C, Java\nData Analysis: Pandas, NumPy, SQL\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub, AWS\n\n\n\nAreas of Interest\n\nCurrently, I am specifically interested in environmental data and how we affect the world around us.\nI’m also curious about trends in culture and if those can be predicted."
   },
   {
     "objectID": "about.html#goals",
     "href": "about.html#goals",
     "title": "About Me",
     "section": "Goals",
-    "text": "Goals\nDescribe what you hope to achieve through your data science journey:\n\nShort-term learning objectives\nLong-term career aspirations\nTypes of problems you want to solve"
+    "text": "Goals\n\nIn the short-term I hope to improve my understanding of common Data Science tools and improve my usage of htem.\nIn the long-term I simply want a stable career in teh field of data science.\nI want to solve problems that affect every day people and help make their life easier, whether directly or indirectly."
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About Me",
     "section": "Contact",
-    "text": "Contact\n\nEmail: your.email@example.com\nGitHub: github.com/your-username\nLinkedIn: linkedin.com/in/your-profile\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+    "text": "Contact\n\nEmail: cnelson1845@gmail.com\nGitHub: github.com/CNelson2004\nLinkedIn: www.linkedin.com/in/cassandra-nelson1\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
   },
   {
     "objectID": "projects/data-acquisition.html",

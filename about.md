@@ -4,44 +4,42 @@ title: "About Me"
 
 ## Background
 
-Write a brief introduction about yourself here. Include:
+Greetings:
 
-- Your academic background
-- Your interest in data science
-- Your career goals
-- Any relevant experience or projects
+- I'm currently a Junior at BYU studying data science. 
+- I'm interested in studying data science and using it to solve real world problems.
+- I am currently pursuing a career as a data scientist or a data analyst. 
+- I'm experienced in SQL, C++, C, Python, Pandas, Numpy, and Java. I have previously made a chess game with a corresponding server/client servers, and a Datalog program from scratch.
 
 ## Education
 
-- **[Your Degree]** - [University Name], [Year]
-- **Relevant Coursework**: Statistics, Data Analysis, Programming, etc.
+- **Data Science** - Brigham Young University, 2027
+- **Relevant Coursework**: Data Structures, Computational Linear Algebra, Computer Systems, Discrete Structure, Statistical Modeling, Advanced Software Construction, Mathematics of Data Science, Algorithm Design & Analysis, Data Science Process, and Technical Communication.
 
 ## Skills & Interests
 
 ### Technical Skills
-- **Programming**: Python
-- **Data Analysis**: Pandas, NumPy
+- **Programming**: Python, C++, C, Java
+- **Data Analysis**: Pandas, NumPy, SQL
 - **Visualization**: Matplotlib, Seaborn
 - **Machine Learning**: Scikit-learn
-- **Tools**: Jupyter Notebooks, Git/GitHub
+- **Tools**: Jupyter Notebooks, Git/GitHub, AWS
 
 ### Areas of Interest
-- [Your specific interests, e.g., environmental data, healthcare analytics, finance, etc.]
-- [Other areas you're curious about]
+- Currently, I am specifically interested in environmental data and how we affect the world around us.
+- I'm also curious about trends in culture and if those can be predicted. 
 
 ## Goals
 
-Describe what you hope to achieve through your data science journey:
-
-- Short-term learning objectives
-- Long-term career aspirations
-- Types of problems you want to solve
+- In the short-term I hope to improve my understanding of common Data Science tools and improve my usage of htem.
+- In the long-term I simply want a stable career in teh field of data science. 
+- I want to solve problems that affect every day people and help make their life easier, whether directly or indirectly. 
 
 ## Contact
 
-- **Email**: your.email@example.com
-- **GitHub**: [github.com/your-username](https://github.com/your-username)
-- **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- **Email**: cnelson1845@gmail.com
+- **GitHub**: [github.com/CNelson2004](https://github.com/CNelson2004)
+- **LinkedIn**: [www.linkedin.com/in/cassandra-nelson1](www.linkedin.com/in/cassandra-nelson1)
 
 ---
 
