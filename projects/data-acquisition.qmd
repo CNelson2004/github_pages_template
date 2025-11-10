@@ -1,11 +1,127 @@
 ---
 title: "Data Acquisition Project"
-author: "Your Name"
-date: "2025-01-01"
+author: "Cassandra Nelson"
+date: "2025-11-10"
 format:
   html:
     code-fold: true
     toc: true
 ---
+# Introduction
+Hello there! Welcome to my data science blog! Today I will be teaching you how to scrape your own movie dataset, and then use it to find interesting relations between that movie, its ratings, its revenue, and more! To aid in this example, I will use a project completed by me and my partner. This project involved looking at all movies released by Disney, and finding relationships between their scores, their revenue, and other variables of interest. 
 
-This is coming down the pipeline. Check again later.
+## Relevance, Interest, and Goals of Project
+### Relevance
+This project is relevant because new movies are coming out every month, and we want to if they are worth watching before they come out, and Disney in particular has been producing many movies over the recent years. If we can find trends in what movies will be good or not, we can save ourselves headache in trying to decide if it is worth our time and dime.
+
+### Interest
+This project is interesting because it can show how people have viewed disney and it's movies over time. Do people see their movies as having gotten better, or worse? Does Disney still have the popularity that it once did? Has it even grown? These are questions we believe are interesting and want to answer.  
+
+### Goals
+We hope to find a correlation between factors that might show us in advance if something is worth seeing or if a movie will be worth making for Disney. (We wouldn’t want to expect a sequel only to learn that no one liked the first movie.) This can be done by not only looking at score and revenue of a movie, but by checking what season it was released in, or which director oversaw it. 
+
+## Web Scraping Info
+Now that we have the introduction complete, it is time to start creating our dataset! However, we need to make sure that it is done ethically. Concerning the web scraping for our project, it was ethical to gather our movie data because we abided by the robots.txt and used public websites with public information. 
+
+We did this by including a header in our request, thus allowing the website owners to contact us if they didn't like our scraping, and we abided by all the rules in the robots.txt. For our websites, there was no time delay required, but we still made sure we didn't overwhelm the website with too many requests at once. If we ever needed a lot of requests, we split up the time between sending those large requests, thus ensuring we only scraped every once in awhile and not constantly. Finally, we didn't go onto any disallowed websites, but only stayed within accepted domains. 
+
+## Steps
+Now that you know how to go about ethically web scraping, what are the actual steps for creating your dataset? Well, concerning our web scraping process, and data collection process in general, were as follows:
+
+1. Scrape titles and release from website containing all disney movies
+2. Reformat the titles to fit Rotten Tomatoes's url formula
+3. Created Rotten Tomatoes's urls using those reformatted titles 
+4. Checked the urls to see if they worked, (in other words, if the response code was 200)
+5. If they didn't we tried multiple methods to modify them into the correct format, and for the unique ones, (like those with a specific ID code), we manually fixed them.
+6. Took each url and scrapped the information we needed from its respective website
+7. Turned placed that information into a Pandas Dataframe
+8. Cleaned that dataframe
+9. Created new columns from old columns as required for our analysis, (such as decade using the year column)
+10. All done! The dataset is clean and ready to be analyzed!
+
+By following these steps, you can make your own dataset and continue on to the next step: Analyzing!
+
+Analysis will be different for each person, since each person will have a different goal and question that they want to answer using their dataset. thus, I cannot give you a step by step guide on how to analyze your dataset, but I can give you some tips.
+
+* Find the mean of a specific feature, and track how it changes over time. You can set the boundaries of your analysis as large or as small as you want. You can analyze over a specific year, or analyze over the entire domain, which in this case, would be all the years that Disney released movies. Then, you can choose to look at the mean for each year, or for each decade, if you have a smaller boundary, then you could analyze over months instead. This usually yields interesting results and helps you find trends.
+* Find correlations between features. Can you predict what one feature will look like if you know another? For our example, if you know the season the movie came out, or who it was directed by, could you predict how much money the movie will make? You could also answer questions such as: Do high scoring movies always make more money? 
+
+## Findings
+Now, we will give you some specifics on what we found during our analysis. During this project our most interesting findings were:
+
+1. Movie ratings appear to be consistently going up each decade (on average), indicating that movies are getting better. 
+2. Movies rated R have the lowest revenue amount on average (this may be affected by the low number of R-rated movies).
+3. Movies rated PG-13 have a noticeable but slight average increase in revenue. (Also, revenue is not adjusted for inflation, thus it might be skewing our data)
+4. TV-14 is the highest-rated film on average, with TV-PG the lowest.
+
+Here are the graphs related to our findings:
+
+![movie-scores-by-decade](movie_scores_decade.png)
+![rating-and-revenue](rating-and-revenue.png)
+![rating-and-score](rating-and-score.png)
+
+### Summary Statistics
+Concerning our base information, we had a total sample size was 523 movies. 
+We had 13 variables: Title, Audience Score, Critic Score, Revenue, Release Date, Year, Film Rating, Director, Genre, Runtime, Month, Season, and Decade. Six were categorical, and seven were quantitative, and including the release date (year-month-day) in quantitative.
+
+Additionally, here are some of the summary statistics we found regarding our two features of greatest interest Revenue and Score: (We would like to note, that in the case of Rotten Tomatoes, score is split into two categories: Audience Score and Critic Score. This is due to how Rotten Tomatoes has these two separate score categories when scoring movies.)
+
+Audience Score:
+
+* count        477.0
+* mean     61.174004
+* std      19.130388
+* min           11.0
+* 25%           46.0
+* 50%           63.0
+* 75%           76.0
+* max          100.0
+
+Critic Score:
+
+* count        359.0
+* mean     62.649025
+* std      27.176733
+* min            0.0
+* 25%           42.0
+* 50%           68.0
+* 75%           86.5
+* max          100.0
+
+Revenue:
+
+* count               221.0
+* mean      83668368.778281
+* std      106875556.581597
+* min                5100.0
+* 25%            17000000.0
+* 50%            50600000.0
+* 75%           100100000.0
+* max           653000000.0
+
+Additionally, we found that Audience and Critic Score Correlation was 0.72.
+
+## Further Info and Resources
+Now that you know how to go about a movie analysis project, you can begin your own project! You can choose to use Rotten Tomatoes like we did, or branch out to other movie critic websites. Below, you will find listed our own sources, and sources that you can use as well. You can choose to focus on a different company, or perhaps focus on a genre or movies from certain years. The possibilities are endless!
+
+### Our sources
+Sources we used:
+
+- [Wikipedia-Disney Movies](https://en.wikipedia.org/wiki/List_of_Walt_Disney_Pictures_films)
+- [Rotten Tomatoes](https://www.rottentomatoes.com/)
+
+In case you are interested in specifically how we completed this project, or simply want to use our cleaned dataset, then you can find that code here:
+
+- [Github Repo](https://github.com/CNelson2004/Movies_Analysis)
+
+### Further Sources
+Related sources you could use for your own project: 
+
+- [Metacritic](https://www.metacritic.com/movie/)
+- [IMDB](https://www.imdb.com/)
+- [Wikipedia-Marvel Movies](https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films)
+- [Wikipedia-DC Movies](https://en.wikipedia.org/wiki/List_of_films_based_on_DC_Comics_publications)
+
+
+
+
