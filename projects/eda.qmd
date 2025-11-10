@@ -9,3 +9,5 @@ format:
 ---
 
 This is coming down the pipeline. Check again later.
+
+In the meantime, you can go to [this website](https://cnelson2004.github.io/blog_assignment/) and check out some neat blog posts about Data Science.
