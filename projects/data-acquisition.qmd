@@ -12,13 +12,13 @@ Hello there! Welcome to my data science blog! Today I will be teaching you how t
 
 ## Relevance, Interest, and Goals of Project
 ### Relevance
-This project is relevant because new movies are coming out every month, and we want to if they are worth watching before they come out, and Disney in particular has been producing many movies over the recent years. If we can find trends in what movies will be good or not, we can save ourselves headache in trying to decide if it is worth our time and dime.
+This project is relevant because new movies are coming out every month, and we want to if they are worth watching before they come out, and Disney in particular has been producing many movies over the recent years? If we can find trends in what movies will be good or not, we can save ourselves headache in trying to decide if it is worth our time and dime.
 
 ### Interest
-This project is interesting because it can show how people have viewed disney and it's movies over time. Do people see their movies as having gotten better, or worse? Does Disney still have the popularity that it once did? Has it even grown? These are questions we believe are interesting and want to answer.  
+This project is interesting because it can show how people have viewed disney and it's movies over time. Do people see their movies as having gotten better or worse? Does Disney still have the popularity that it once did? Has it grown? These are questions we believe are interesting and want to answer.  
 
 ### Goals
-We hope to find a correlation between factors that might show us in advance if something is worth seeing or if a movie will be worth making for Disney. (We wouldn’t want to expect a sequel only to learn that no one liked the first movie.) This can be done by not only looking at score and revenue of a movie, but by checking what season it was released in, or which director oversaw it. 
+We hope to find a correlation between factors that might show us in advance if something is worth seeing or if a movie will be worth making for Disney. (We wouldn’t want to expect a sequel only to learn that there is no chance of it being created due to the lack of revenue made by the first movie) This can be done by not only looking at score and revenue of a movie, but by checking what season it was released in, or which director oversaw it, in addition to the main features of score and revenue. 
 
 ## Web Scraping Info
 Now that we have the introduction complete, it is time to start creating our dataset! However, we need to make sure that it is done ethically. Concerning the web scraping for our project, it was ethical to gather our movie data because we abided by the robots.txt and used public websites with public information. 
@@ -28,14 +28,14 @@ We did this by including a header in our request, thus allowing the website owne
 ## Steps
 Now that you know how to go about ethically web scraping, what are the actual steps for creating your dataset? Well, concerning our web scraping process, and data collection process in general, were as follows:
 
-1. Scrape titles and release from website containing all disney movies
-2. Reformat the titles to fit Rotten Tomatoes's url formula
+1. Scraped titles and release from website containing all Disney movies
+2. Reformatted the titles to fit Rotten Tomatoes's main url formula
 3. Created Rotten Tomatoes's urls using those reformatted titles 
 4. Checked the urls to see if they worked, (in other words, if the response code was 200)
-5. If they didn't we tried multiple methods to modify them into the correct format, and for the unique ones, (like those with a specific ID code), we manually fixed them.
+5. If they didn't we tried multiple methods to modify them into the desired format, and for the unique ones, (like those with a specific ID code), we manually fixed them.
 6. Took each url and scrapped the information we needed from its respective website
-7. Turned placed that information into a Pandas Dataframe
-8. Cleaned that dataframe
+7. Took that information and placed it into a Pandas Dataframe
+8. Cleaned the dataframe, (such as removing '%' from the scores)
 9. Created new columns from old columns as required for our analysis, (such as decade using the year column)
 10. All done! The dataset is clean and ready to be analyzed!
 
@@ -101,6 +101,16 @@ Revenue:
 
 Additionally, we found that Audience and Critic Score Correlation was 0.72.
 
+### Commentary
+
+Considering what we found, I know I can't make any comments regarding revenue, because it wasn't adjusted for inflation. However, scores tell a very interesting story. It seems that critics used to favor movies far more than the audience did, but over time they have become more aligned. In fact, now it seems as though critics few movies slightly less favorably than audiences, on average. This switch happened between 1980 and 1990. 
+
+Looking at the movies that were produced during that time. I don't recognize many, and those that I do recognize were not big and well-known productions. It seems Disney simply floundered for a bit before finding their footing and creating good movies again. I believe that this shows the resilience of the company that they could come back from such a drop. 
+
+Concerning us, as the audience, I believe we can take this to mean that just because a company makes bad movies currently, doesn't mean they can't turn around and make good movies in the future. If Disney hits a slump in the future, then we can rest assured that they can come back with better movies. 
+
+Additionally, I believe that Disney can thrive in any field, considering that the rating for all film-ratings was rather similar. Although, I believe Disney does best in the family friendly market considering that PG-13 makes the biggest amount of money. However, I believe that may be skewed by not counting for inflation, and them making more PG-13 movies in recent years compared to other film-ratings. 
+
 ## Further Info and Resources
 Now that you know how to go about a movie analysis project, you can begin your own project! You can choose to use Rotten Tomatoes like we did, or branch out to other movie critic websites. Below, you will find listed our own sources, and sources that you can use as well. You can choose to focus on a different company, or perhaps focus on a genre or movies from certain years. The possibilities are endless!
 
@@ -121,7 +131,3 @@ Related sources you could use for your own project:
 - [IMDB](https://www.imdb.com/)
 - [Wikipedia-Marvel Movies](https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films)
 - [Wikipedia-DC Movies](https://en.wikipedia.org/wiki/List_of_films_based_on_DC_Comics_publications)
-
-
-
-
